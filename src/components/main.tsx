@@ -7,8 +7,8 @@ interface Monkey {
   name: string | null;
   scientificName: string | null;
   weight: string | null;
+  height: string | null;
   lifetime: string | null;
-  // Adicione outras propriedades relevantes aqui
 }
 
 export function Main() {
@@ -22,6 +22,7 @@ export function Main() {
     name={monkey.name}
     scientificName={monkey.scientificName}
     weight={monkey.weight}
+    height={monkey.height}
     lifetime={monkey.lifetime}
     />
     ))}
