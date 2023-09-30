@@ -29,9 +29,9 @@ export const Card: React.FC<Card> = ({ name, scientificName, weight, height, lif
       <p className="flex justify-center text-gray-500 ">{scientificName}</p>
       </div>
       <div>
-      <p className="pt-4">weight: {replaceNullWithUnknown(weight)}</p>
-      <p>height: {replaceNullWithUnknown(height)}</p>
-      <p>lifetime: {replaceNullWithUnknown(lifetime)}</p>
+      <p className="pt-4">Weight: {replaceNullWithUnknown(weight)}</p>
+      <p>Height: {replaceNullWithUnknown(height)}</p>
+      <p>Lifetime: {replaceNullWithUnknown(lifetime)}</p>
       </div>
       <div className="flex relative left-0	">
         <Button />
