@@ -9,6 +9,7 @@ interface Monkey {
   weight: string | null;
   height: string | null;
   lifetime: string | null;
+  conservation: string | null;
 }
 
 export function Main() {
@@ -24,6 +25,7 @@ export function Main() {
     weight={monkey.weight}
     height={monkey.height}
     lifetime={monkey.lifetime}
+    conservation={monkey.conservation}
     />
     ))}
   </div>

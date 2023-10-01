@@ -9,7 +9,7 @@ interface MonkeysProps {
 export default function Monkeys ({ params }: MonkeysProps) {
   return (
     <div>
-     <h1> Monkeys: {params.id}</h1>
+     <h1> Monkey: {params.id}</h1>
      <Link href="/">Home</Link>
     </div>
   )

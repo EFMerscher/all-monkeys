@@ -9,10 +9,11 @@ interface Card {
   weight: string | null;
   height: string | null;
   lifetime: string | null;
+  conservation: string | null;
   imageUrl: string;
 }
 
-export const Card: React.FC<Card> = ({ name, scientificName, weight, height, lifetime, imageUrl }) => {
+export const Card: React.FC<Card> = ({ name, scientificName, weight, height, lifetime, conservation, imageUrl }) => {
   const replaceNullWithUnknown = (value: string | null) => {
     return value === null ? 'unknown' : value; }
   return (
@@ -29,9 +30,10 @@ export const Card: React.FC<Card> = ({ name, scientificName, weight, height, lif
       <p className="flex justify-center text-gray-500 ">{scientificName}</p>
       </div>
       <div>
-      <p className="pt-4">Weight: {replaceNullWithUnknown(weight)}</p>
-      <p>Height: {replaceNullWithUnknown(height)}</p>
-      <p>Lifetime: {replaceNullWithUnknown(lifetime)}</p>
+      <p className="pt-4">Size: {replaceNullWithUnknown(height)}</p>
+      <p>Weight: {replaceNullWithUnknown(weight)}</p>
+      <p>Lifespan: {replaceNullWithUnknown(lifetime)}</p>
+      <p>Conversation: {replaceNullWithUnknown(conservation)}</p>
       </div>
       <div className="flex relative left-0	">
         <Button />
