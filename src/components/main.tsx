@@ -5,7 +5,7 @@ import monkeysData from '@/data/monkeysData.json'
 interface Monkey {
   imageUrl: string;
   name: string | null;
-  scientificName: string | null;
+  scientificName: string;
   weight: string | null;
   height: string | null;
   lifetime: string | null;

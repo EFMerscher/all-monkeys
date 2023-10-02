@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 interface Card {
   name: string | null;
-  scientificName: string | null;
+  scientificName: string;
   weight: string | null;
   height: string | null;
   lifetime: string | null;
@@ -36,7 +36,7 @@ export const Card: React.FC<Card> = ({ name, scientificName, weight, height, lif
       <p>Conversation: {replaceNullWithUnknown(conservation)}</p>
       </div>
       <div className="flex relative left-0	">
-        <Button />
+        <Button monkeyId={scientificName} />
       </div>
     </div>
   );
