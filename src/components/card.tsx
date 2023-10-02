@@ -17,7 +17,7 @@ export const Card: React.FC<Card> = ({ name, scientificName, weight, height, lif
   const replaceNullWithUnknown = (value: string | null) => {
     return value === null ? 'unknown' : value; }
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 grid">
+    <div className="bg-white rounded-lg shadow-lg border-solid border-2 p-4 grid">
       <div className="">
         <Image 
           src={imageUrl}
@@ -30,10 +30,10 @@ export const Card: React.FC<Card> = ({ name, scientificName, weight, height, lif
       <p className="flex justify-center text-gray-500 ">{scientificName}</p>
       </div>
       <div>
-      <p className="pt-4">Size: {replaceNullWithUnknown(height)}</p>
-      <p>Weight: {replaceNullWithUnknown(weight)}</p>
-      <p>Lifespan: {replaceNullWithUnknown(lifetime)}</p>
-      <p>Conversation: {replaceNullWithUnknown(conservation)}</p>
+      <p className="pt-4"><span className="font-bold">Size:</span> {replaceNullWithUnknown(height)}</p>
+      <p><span className="font-bold">Weight:</span> {replaceNullWithUnknown(weight)}</p>
+      <p><span className="font-bold">Lifespan:</span> {replaceNullWithUnknown(lifetime)}</p>
+      <p><span className="font-bold">Conversation:</span> {replaceNullWithUnknown(conservation)}</p>
       </div>
       <div className="flex relative left-0	">
         <Button monkeyId={scientificName} />
