@@ -3,7 +3,7 @@ import { Button } from '@/components/button'
 import Image from 'next/image'
 
 
-interface Card {
+export interface Card {
   name: string | null;
   scientificName: string;
   weight: string | null;
