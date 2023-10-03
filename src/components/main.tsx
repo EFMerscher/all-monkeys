@@ -2,8 +2,6 @@ import * as React from "react";
 import { Card } from "@/components/card";
 import monkeysData from "@/data/monkeysData.json";
 
-
-
 export function Main() {
   return (
     <main className="bg-slate-200 py-5">
