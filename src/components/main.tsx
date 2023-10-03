@@ -14,7 +14,7 @@ interface Monkey {
 
 export function Main() {
   return (
-    <main className="bg-blue-100 py-5">
+    <main className="bg-slate-200 py-5">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
     {monkeysData.map((monkey: Monkey, index: number) => (
      <Card
