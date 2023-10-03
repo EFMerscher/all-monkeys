@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Button } from "@/components/button";
 import Image from "next/image";
+import { replaceNullWithUnknown } from "@/utils/replaceNullWithUnknown";
 
 export interface Card {
   name: string | null;
@@ -21,9 +22,7 @@ export const Card: React.FC<Card> = ({
   conservation,
   imageUrl,
 }) => {
-  const replaceNullWithUnknown = (value: string | null) => {
-    return value === null ? "unknown" : value;
-  };
+  
   return (
     <div className="bg-white rounded-lg shadow-lg border-solid border-2 p-4 grid">
       <div className="">

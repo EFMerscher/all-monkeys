@@ -1,2 +1,3 @@
-const replaceNullWithUnknown = (value: string | null) => {
-  return value === null ? 'unknown' : value; }
+export function replaceNullWithUnknown(value: any) {
+  return value === null ? 'Unknown' : value;
+}
