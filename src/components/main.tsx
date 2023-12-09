@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Card } from "@/components/card";
-import monkeysData from "@/data/monkeysData.json";
+import monkeysData from "@/data/monkeysDataBR.json";
 
 export function Main() {
   return (

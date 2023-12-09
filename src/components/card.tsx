@@ -52,7 +52,7 @@ export const Card: React.FC<Card> = ({
           {replaceNullWithUnknown(lifetime)}
         </p>
         <p>
-          <span className="font-bold">Conversation:</span>{" "}
+          <span className="font-bold">Conservation:</span>{" "}
           {replaceNullWithUnknown(conservation)}
         </p>
       </div>

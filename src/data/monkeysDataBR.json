@@ -1,5 +1,23 @@
 [
   {
+    "name": "Lêmure-anão-de-orelhas-peludas",
+    "scientificName": "Allocebus trichotis",
+    "gender": null,
+    "family": null,
+    "specie": null,
+    "abstract": null,
+    "weight": null,
+    "height": null,
+    "lifetime": null,
+    "location": null,
+    "conservation": null,
+    "habitat": null,
+    "food": null,
+    "eatingBehavior": null,
+    "socialBehavior": null,
+    "imageUrl": "https://i.imgur.com/FnjdVzn.png"
+  },
+  {
     "name": "Macaco-prego",
     "scientificName": "Cebus apella",
     "gender": null,
