@@ -9,7 +9,6 @@ export function Footer() {
     <footer className="bg-yellow-500 border-zinc-500 p-6 flex justify-between items-center">
       <div>
         <p>Primatarquia © 2021</p>
-        <p>Developed by @ed_zera</p>
       </div>
       <div className="flex gap-4">
         <Link href="instagram.com/primatarquia" target="_blank" passHref>
