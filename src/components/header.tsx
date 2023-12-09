@@ -5,7 +5,7 @@ import monkeyIcon from "@/assets/monkey2.png";
 
 export function Header() {
   return (
-    <header className="bg-neutral-100 py-4 px-6 flex justify-between items-center drop-shadow-md">
+    <header className="bg-neutral-100 py-4 px-16 flex justify-between items-center drop-shadow-md">
       <div className="start-0">
         <Image src={monkeyIcon} width={50} height={50} alt="Monkey icon" />
       </div>

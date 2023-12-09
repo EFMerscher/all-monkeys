@@ -5,7 +5,7 @@ import monkeysData from "@/data/monkeysData.json";
 export function Main() {
   return (
     <main className="bg-slate-200 py-5">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-16">
         {monkeysData.map((monkey: Card, index: number) => (
           <Card
             key={index}
@@ -22,3 +22,5 @@ export function Main() {
     </main>
   );
 }
+
+
